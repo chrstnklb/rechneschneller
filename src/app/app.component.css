@@ -3,13 +3,13 @@ h2, p {
 }
 
 h2 {
-    font-size: 3em;
-    margin-bottom: 20px;
+    font-size: 1.5em; /* Reduced from 3em to 1.5em */
+    margin-bottom: 10px; /* Reduced from 20px to 10px */
 }
 
 p {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 1em; /* Reduced from 2em to 1em */
+    margin-bottom: 10px; /* Reduced from 20px to 10px */
 }
 
 .grid-container, .result {
@@ -18,10 +18,10 @@ p {
 }
 
 .option-card, .question-card {
-    font-size: 3em; /* Make the text bigger */
+    font-size: 1.5em; /* Reduced from 3em to 1.5em */
     text-align: center;
     transition: background-color 0.3s;
-    padding: 40px 20px; /* Adjust padding to control card height */
+    padding: 20px 10px; /* Reduced from 40px 20px to 20px 10px */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,11 +50,11 @@ p {
 }
 
 .question-container {
-    margin-bottom: 20px; /* Double the space between question and answers */
+    margin-bottom: 10px; /* Reduced from 20px to 10px */
 }
 
 .options-container {
-    gap: 10px; /* Space between the answers */
+    gap: 5px; /* Reduced from 10px to 5px */
 }
 
 .popup-message {
@@ -64,10 +64,10 @@ p {
     transform: translate(-50%, -50%);
     background-color: #4caf50;
     color: white;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 10px; /* Reduced from 20px to 10px */
+    border-radius: 5px; /* Reduced from 10px to 5px */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 1.5em;
+    font-size: 0.75em; /* Reduced from 1.5em to 0.75em */
     z-index: 1000;
     animation: fadeOut 5s forwards;
 }
@@ -76,11 +76,11 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Adjust the gap between the button and the text */
+    gap: 5px; /* Reduced from 10px to 5px */
 }
 
 button {
-    margin-right: 10px; /* Add some space between the button and the text */
+    margin-right: 5px; /* Reduced from 10px to 5px */
 }
 
 @keyframes fadeOut {
