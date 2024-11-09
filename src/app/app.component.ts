@@ -61,6 +61,14 @@ export class AppComponent {
 
     this.correctAnswer = this.dividend / this.divisor;
     this.generateOptions();
+    this.resetOptionCards(); // Reset the background color of the option cards
+  }
+
+  resetOptionCards(): void {
+    const optionCards = document.querySelectorAll('.option-card');
+    optionCards.forEach(card => {
+      card.classList.remove('correct', 'incorrect');
+    });
   }
 
   generateOptions(): void {
