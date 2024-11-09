@@ -1,0 +1,97 @@
+h2, p {
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.grid-container, .result {
+    width: 80%; /* Use 80% of the horizontal space */
+    margin: 0 auto; /* Center the container */
+}
+
+.option-card, .question-card {
+    font-size: 3em; /* Make the text bigger */
+    text-align: center;
+    transition: background-color 0.3s;
+    padding: 40px 20px; /* Adjust padding to control card height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Light background to indicate non-clickable */
+    border: 2px solid #ccc; /* Border to indicate non-clickable */
+    width: 100%; /* Ensure the card takes full width of the grid tile */
+    height: 100%; /* Ensure the card takes full height of the grid tile */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.option-card {
+    background-color: #fff; /* Default background color */
+    cursor: pointer; /* Pointer cursor to indicate clickable */
+}
+
+.option-card:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+.question-container {
+    margin-bottom: 20px; /* Double the space between question and answers */
+}
+
+.options-container {
+    gap: 10px; /* Space between the answers */
+}
+
+.popup-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.5em;
+    z-index: 1000;
+    animation: fadeOut 5s forwards;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Adjust the gap between the button and the text */
+}
+
+button {
+    margin-right: 10px; /* Add some space between the button and the text */
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.highlight {
+    background-color: yellow; /* Highlight the actual result */
+}
