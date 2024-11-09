@@ -1,49 +1,68 @@
-body {
- height: 100%;
- background-color: aqua;
+.app-container {
+    height: 100%;
+    background-color: mediumaquamarine;
 }
 
-h2, p {
+h2,
+p {
     text-align: center;
 }
 
 h2 {
-    font-size: 1.5em; /* Reduced from 3em to 1.5em */
-    margin-bottom: 10px; /* Reduced from 20px to 10px */
+    font-size: 1.5em;
+    /* Reduced from 3em to 1.5em */
+    margin-bottom: 10px;
+    /* Reduced from 20px to 10px */
 }
 
 p {
-    font-size: 1em; /* Reduced from 2em to 1em */
-    margin-bottom: 10px; /* Reduced from 20px to 10px */
+    font-size: 1em;
+    /* Reduced from 2em to 1em */
+    margin-bottom: 10px;
+    /* Reduced from 20px to 10px */
 }
 
-.grid-container, .result {
-    width: 80%; /* Use 80% of the horizontal space */
-    margin: 0 auto; /* Center the container */
+.grid-container,
+.result {
+    width: 80%;
+    /* Use 80% of the horizontal space */
+    margin: 0 auto;
+    /* Center the container */
 }
 
-.option-card, .question-card {
-    font-size: 1.5em; /* Reduced from 3em to 1.5em */
+.option-card,
+.question-card {
+    font-size: 1.5em;
+    /* Reduced from 3em to 1.5em */
     text-align: center;
     transition: background-color 0.3s;
-    padding: 20px 10px; /* Reduced from 40px 20px to 20px 10px */
+    padding: 20px 10px;
+    /* Reduced from 40px 20px to 20px 10px */
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f0f0f0; /* Light background to indicate non-clickable */
-    border: 2px solid #ccc; /* Border to indicate non-clickable */
-    width: 100%; /* Ensure the card takes full width of the grid tile */
-    height: 100%; /* Ensure the card takes full height of the grid tile */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background-color: #f0f0f0;
+    /* Light background to indicate non-clickable */
+    border: 2px solid #ccc;
+    /* Border to indicate non-clickable */
+    width: 100%;
+    /* Ensure the card takes full width of the grid tile */
+    height: 100%;
+    /* Ensure the card takes full height of the grid tile */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
 }
 
 .option-card {
-    background-color: #fff; /* Default background color */
-    cursor: pointer; /* Pointer cursor to indicate clickable */
+    background-color: #fff;
+    /* Default background color */
+    cursor: pointer;
+    /* Pointer cursor to indicate clickable */
 }
 
 .option-card:hover {
-    background-color: #e0e0e0; /* Slightly darker background on hover */
+    background-color: #e0e0e0;
+    /* Slightly darker background on hover */
 }
 
 .correct {
@@ -55,11 +74,13 @@ p {
 }
 
 .question-container {
-    margin-bottom: 10px; /* Reduced from 20px to 10px */
+    margin-bottom: 10px;
+    /* Reduced from 20px to 10px */
 }
 
 .options-container {
-    gap: 5px; /* Reduced from 10px to 5px */
+    gap: 5px;
+    /* Reduced from 10px to 5px */
 }
 
 .popup-message {
@@ -69,10 +90,13 @@ p {
     transform: translate(-50%, -50%);
     background-color: #4caf50;
     color: white;
-    padding: 10px; /* Reduced from 20px to 10px */
-    border-radius: 5px; /* Reduced from 10px to 5px */
+    padding: 10px;
+    /* Reduced from 20px to 10px */
+    border-radius: 5px;
+    /* Reduced from 10px to 5px */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 0.75em; /* Reduced from 1.5em to 0.75em */
+    font-size: 0.75em;
+    /* Reduced from 1.5em to 0.75em */
     z-index: 1000;
     animation: fadeOut 5s forwards;
 }
@@ -81,22 +105,26 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px; /* Reduced from 10px to 5px */
+    gap: 5px;
+    /* Reduced from 10px to 5px */
 }
 
 button {
-    margin-right: 5px; /* Reduced from 10px to 5px */
+    margin-right: 5px;
+    /* Reduced from 10px to 5px */
 }
 
 @keyframes fadeOut {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
 }
 
 .highlight {
-    background-color: yellow; /* Highlight the actual result */
+    background-color: yellow;
+    /* Highlight the actual result */
 }

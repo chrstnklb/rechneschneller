@@ -1,8 +1,9 @@
-<div [ngStyle]="{'background-color': backgroundColor}">
+<div class="app-container">
   <h2>Divisionsübung</h2>
 
   <div class="grid-container">
-    <mat-grid-list cols="3" rowHeight="1:1" gutterSize="10px" class="question-container" *ngIf="taskCount < NUMBER_OF_ROUNDS">
+    <mat-grid-list cols="3" rowHeight="1:1" gutterSize="10px" class="question-container"
+      *ngIf="taskCount < NUMBER_OF_ROUNDS">
       <mat-grid-tile colspan="3">
         <mat-card class="question-card">
           <p>{{ dividend }} ÷ {{ divisor }}?</p>
@@ -10,10 +11,12 @@
       </mat-grid-tile>
     </mat-grid-list>
 
-    <mat-progress-bar mode="determinate" [value]="(currentRound / NUMBER_OF_ROUNDS) * 100"></mat-progress-bar> <!-- Added progress bar -->
+    <mat-progress-bar mode="determinate" [value]="(currentRound / NUMBER_OF_ROUNDS) * 100"></mat-progress-bar>
+    <!-- Added progress bar -->
     <br>
 
-    <mat-grid-list cols="4" rowHeight="1:1" gutterSize="10px" class="options-container" *ngIf="taskCount < NUMBER_OF_ROUNDS">
+    <mat-grid-list cols="4" rowHeight="1:1" gutterSize="10px" class="options-container"
+      *ngIf="taskCount < NUMBER_OF_ROUNDS">
       <mat-grid-tile *ngFor="let option of options">
         <mat-card class="option-card" (click)="checkAnswer(option)">
           <p>{{ option }}</p>
